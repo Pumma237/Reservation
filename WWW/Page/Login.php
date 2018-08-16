@@ -27,9 +27,13 @@
           </div>
  
           <div class="form-group">
-            <button type="submit" class="btn btn-success" >Suivant</button>
+            <button type="submit" class="btn btn-success" >Suivant</button><br>
+          
             <!-- <span class="text-danger" style="color:red">{{ error }}</span> -->
           </div>
+            <a href="inscription.php">Cree votre compte</a>
+<br><br>
+            <p>Pour etre inscrit sur espace Adherent il faut contacter l'administrateur vie ce formulaire !</p>
  
         </div>
       </form>
