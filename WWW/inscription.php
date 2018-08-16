@@ -49,7 +49,6 @@
       <div class="button-container">
         <button><span>S'inscrire</span></button>
       </div>
-      <div class="footer"><a href="#">Mot de passe oublier ?</a></div>
     </form>
   </div>
   

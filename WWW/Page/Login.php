@@ -31,9 +31,9 @@
           
             <!-- <span class="text-danger" style="color:red">{{ error }}</span> -->
           </div>
-            <a href="inscription.php">Cree votre compte</a>
+            <a href="inscription.php">Crée un nouveau compte</a>
 <br><br>
-            <p>Pour etre inscrit sur espace Adherent il faut contacter l'administrateur vie ce formulaire !</p>
+            <p>Pour être inscrit sur espace adhérant,  il faut contacter l'administrateur vie ce formulaire .</p>
  
         </div>
       </form>

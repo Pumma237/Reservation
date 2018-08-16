@@ -12,7 +12,7 @@ include 'ConnexionBDD.php';
     //   $myusername = mysqli_real_escape_string($db,$request->username);
     //   $mypassword = mysqli_real_escape_string($db,$request->password); 
       
-      $sql = "SELECT id FROM user WHERE login = '$myusername' and mdp = '$mypassword'";
+      $sql = "SELECT isAdmin FROM user WHERE login = '$myusername' and mdp = '$mypassword'";
       $reponse =  $bdd->query($sql);
       $count =$reponse->rowCount();
       
@@ -20,8 +20,16 @@ include 'ConnexionBDD.php';
 		
       if($count == 1) {
          $_SESSION['login_user'] = $myusername;
-         
-         header("location: ../index.php");
+         while($donnees = $reponse->fetch()) {
+          if($donnees['isAdmin'] == 1){
+            header("location: ../Page/BackOffice.php");
+          }
+          else{
+            header("location: ../index.php");
+          }
+         }
+
+
       }else {
          $error = "Your Login Name or Password is invalid";
          echo $error;
