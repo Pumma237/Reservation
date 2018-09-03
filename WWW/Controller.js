@@ -56,7 +56,4 @@ $scope.formSubmit = function(){
   }
 }]);
 
-$( function() {
-  $( "#datepicker" ).datepicker();
-} );
 
